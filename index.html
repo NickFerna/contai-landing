@@ -272,6 +272,15 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   .prow h3{font-size:1.4rem}
 }
 
+/* problemas concretos */
+.solve .lead{margin-top:6px}
+.solve-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:44px}
+.solve .card{background:var(--surface);padding:28px;border-top:4px solid var(--amber)}
+.solve .card h3{font-size:1.25rem;margin-bottom:10px}
+.solve .card p{color:var(--ink);font-size:1.05rem;line-height:1.55}
+@media(max-width:860px){.solve-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.solve-grid{grid-template-columns:1fr}}
+
 .h2-big{font-size:clamp(2.1rem,4.6vw,3.2rem);letter-spacing:-.03em;line-height:1.08}
 .vscene .mouth{fill:none;stroke:var(--ink);stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
 
@@ -279,6 +288,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 .steps li>*,.steps li::before{transition:opacity .4s ease,transform .4s ease,color .3s ease}
 @media (hover:hover){
   .steps:hover li:not(:hover)>*,.steps:hover li:not(:hover)::before{opacity:.3}
+  .steps li{padding-right:12px}
   .steps li:hover>*{transform:scale(1.07);transform-origin:left top}
   .steps li:hover::before{transform:scale(1.15);transform-origin:left top}
   .steps li:hover h3{color:var(--accent)}
@@ -424,6 +434,46 @@ nav.scrolled{box-shadow:0 8px 24px -16px rgba(0,0,0,.3)}
     </ol>
   </div>
 </section>
+<!-- 2a. PROBLEMAS CONCRETOS -->
+<section class="solve" id="resolvemos">
+  <div class="wrap">
+    <span class="eyebrow">O que a contaí resolve</span>
+    <h2 class="h2-big">Situações do dia a dia que a planilha organiza.</h2>
+    <p class="lead">Cada problema abaixo vira uma parte da planilha que montamos para o seu negócio.</p>
+
+    <div class="solve-grid">
+      <article class="card">
+        <h3>Venda de balcão anotada em caderno</h3>
+        <p>Entradas ficam espalhadas entre caderno, maquininha e Pix. Na planilha, cada venda tem um lugar e o total do dia fecha sozinho.</p>
+      </article>
+      <article class="card">
+        <h3>Fiado sem controle</h3>
+        <p>Quem deve, quanto deve e desde quando. A planilha lista os valores a receber e destaca os que estão atrasados.</p>
+      </article>
+      <article class="card">
+        <h3>Conta de casa misturada com a do negócio</h3>
+        <p>Retirada do dono e despesa da empresa ficam em colunas separadas, e você enxerga quanto realmente sobra para o negócio.</p>
+      </article>
+      <article class="card">
+        <h3>Boleto que vence sem aviso</h3>
+        <p>Fornecedor, luz e aluguel entram num calendário de vencimentos, com destaque para o que vence nos próximos dias.</p>
+      </article>
+      <article class="card">
+        <h3>Preço definido por chute</h3>
+        <p>Você informa o custo de cada produto e a planilha mostra a margem que sobra em cada preço de venda.</p>
+      </article>
+      <article class="card">
+        <h3>Compra de estoque no escuro</h3>
+        <p>Com as vendas registradas, dá para ver o que sai mais e o que fica parado, e comprar de fornecedor com mais segurança.</p>
+      </article>
+    </div>
+
+    <div class="trust-cta">
+      <a class="btn" href="#conversa">Quero resolver o meu caso</a>
+    </div>
+  </div>
+</section>
+
 <!-- 2b. ANTES / DEPOIS -->
 <section>
   <div class="wrap">
@@ -581,7 +631,7 @@ nav.scrolled{box-shadow:0 8px 24px -16px rgba(0,0,0,.3)}
     <ol class="steps">
       <li><h3>Conversamos</h3><p>Você conta como seu negócio funciona e como controla o dinheiro hoje. Sem pressa e sem jargão.</p></li>
       <li><h3>Criamos sob medida</h3><p>Montamos a planilha com as categorias, produtos e serviços do seu negócio.</p></li>
-      <li><h3>Colocamos para rodar</h3><p>Ajudamos a preencher o começo e ensinamos a usar, no seu ritmo.</p></li>
+      <li><h3>Ajudamos a preencher o começo e ensinamos a usar, no seu ritmo</h3></li>
       <li><h3>Acompanhamos de perto</h3><p>Surgiu dúvida ou algo mudou no negócio? Ajustamos a planilha com você.</p></li>
     </ol>
   </div>
